@@ -1,0 +1,11 @@
+to cerate react app-> npm create vite@latest
+
+npm install
+
+npm install react-router-dom
+
+npm install react-google-charts
+
+
+CG-YWr6R6hm8hod2tyv8CaeC4MY -key
+
