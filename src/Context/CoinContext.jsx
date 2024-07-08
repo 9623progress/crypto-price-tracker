@@ -7,11 +7,12 @@ const CoinContextProvider = (props) => {
   const [currency, setCurrency] = useState({ name: "usd", symbol: "$" });
 
   const fetchAllCoin = async () => {
+    const apiKey = import.meta.env.REACT_APP_API_KEY;
     const options = {
       method: "GET",
       headers: {
         accept: "application/json",
-        "x-cg-demo-api-key": "CG-YWr6R6hm8hod2tyv8CaeC4MY",
+        "x-cg-demo-api-key": { apiKey },
       },
     };
 

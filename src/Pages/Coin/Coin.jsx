@@ -5,6 +5,7 @@ import { CoinContext } from "../../Context/CoinContext";
 import LineChart from "../../Components/LineChart/LineChart";
 
 const Coin = () => {
+  const apiKey = import.meta.env.REACT_APP_API_KEY;
   const { coinId } = useParams();
   const [coinData, setCoinData] = useState();
   const [historicalData, setHistoricalData] = useState();
@@ -15,7 +16,7 @@ const Coin = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        "x-cg-demo-api-key": "CG-YWr6R6hm8hod2tyv8CaeC4MY",
+        "x-cg-demo-api-key": { apiKey },
       },
     };
 
@@ -32,7 +33,7 @@ const Coin = () => {
       method: "GET",
       headers: {
         accept: "application/json",
-        "x-cg-demo-api-key": "CG-YWr6R6hm8hod2tyv8CaeC4MY",
+        "x-cg-demo-api-key": { apiKey },
       },
     };
 
