@@ -102,6 +102,33 @@
     color: red;
 }
 
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.pagination li {
+
+    border: 2px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 @media (max-width:600px) {
     .table-layout {
